@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+platform :ios, '8.0'
+use_frameworks!
+target 'MWPhotoBrowser_Example'  do
+  pod "MWPhotoBrowser", :path => "../"
+end
+
+target 'MWPhotoBrowser_Tests'  do
+  pod "MWPhotoBrowser", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
